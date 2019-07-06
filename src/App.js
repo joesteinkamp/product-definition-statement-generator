@@ -339,7 +339,7 @@ function FormOutput(props) {
 		<div className="output">
       <h2>Problem Statement</h2>
       <p>Select the primary activity and step you want to focus on.</p>
-      <pre>A {props.userRole} who wants to {props.selectedReason} need to {props.selectedStep} but feels {props.selectedNegFeel} about {props.selectedObstacle}.</pre>
+      <pre>A {props.userRole} who wants to {props.selectedReason} needs to {props.selectedStep} but feels {props.selectedNegFeel} about {props.selectedObstacle}.</pre>
     </div>
 	);
 }

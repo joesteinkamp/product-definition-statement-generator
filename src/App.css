@@ -179,10 +179,12 @@ button {
   
 
 pre {
-  padding: 16px;
+  padding: 24px;
   background-color: #efefef;
   word-wrap: break-word;
   white-space: pre-wrap;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 
