@@ -67,6 +67,7 @@ h2 {
     font-weight: 600;
     font-size: 36px;
     margin-bottom: 16px;
+    margin-top: 24px;
 }
 h3 {
     font-weight: 600;
@@ -101,19 +102,16 @@ h6 {
   display: none;
 }
 
-.card {
-  display: block;
-  box-sizing: border-box;
-  background-color: #fff;
-  border: 0;
-  border-radius: 2px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .24), 0 0 2px 0 rgba(0, 0, 0, .12);
+
+/* SECTIONS */
+.section {
+  border-top: 1px solid #F0F1F3;
 }
 
 
 /* FORMS */
 
-label, input {
+label {
   cursor: pointer;
 }
 
@@ -125,7 +123,7 @@ label {
 
 input {
   display: block;
-  margin: 8px 0 24px;
+  margin: 8px 0;
   font-size: 18px;
   line-height: 22px;
   width: 100%;
@@ -137,6 +135,7 @@ input {
 input[type="radio"] {
   width: 16px;
   height: 16px;
+  cursor: pointer;
 }
 
 button {
@@ -155,75 +154,25 @@ button {
   }
 
 
-/* Segmented Control (iOS 12 & Below-like toggle) */
-.segmented-control {
-  position: relative;
-  display: inline-block;
-  border: 1px solid #4A90E2;
-  color: #4A90E2; 
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: none;
-  overflow: hidden;
-  margin: .8em auto;
-  border-radius: 4px;
-  box-sizing: border-box;
-  user-select: none;
-  width: 100%;
-}
-  .segmented-control > input {
-    display: none;
-  }
-  .segmented-control > input + label {
-    display: inline-block;
-    width: 50%;
-    text-align: center;
-    padding: 10px 0;
-  }
-  .segmented-control > input:checked + label {
-    background: #4A90E2;
-    color: #fff;
-  }
-
-
-
-/* Segmented Options (iOS 13-like toggle) */
-.segmented-options {
-  border-radius: 800px;
-  background: #f7f7f7;
-}
-  .segmented-options > input {
-    display: none;
-  }
-    .segmented-options > input + label {
-      display: inline-block;
-      padding: 8px 0;
-      width: 33%;
-      text-align: center;
-      border-radius: 800px;
-    }
-      .segmented-options > input + label:hover {
-        background: #dceaf9;
-      }
-      .segmented-options > input + label:nth-child(2) {
-        width: 34%;
-      }
-      .segmented-options > input:checked + label {
-        background: #4A90E2;
-        color: #fff;
-          }
-  
-
 pre {
   padding: 24px;
-  background-color: #efefef;
+  background-color: #F0F1F3;
   word-wrap: break-word;
   white-space: pre-wrap;
   font-size: 20px;
   line-height: 24px;
+  border: 1px solid #6C7B8B;
+  border-radius: 2px;
 }
 
 
+
+.active {
+  background: #D5DFEB;
+  padding: 8px 8px 0;
+  margin: -8px -8px 0;
+  border-radius: 2px;
+}
 
 
 
@@ -234,6 +183,7 @@ pre {
   display: grid;
   grid-template-columns: repeat(13, 1fr);
   grid-gap: 24px;
+  margin-bottom: 16px;
 }
   .col {
     align-self: end;
